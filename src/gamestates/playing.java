@@ -50,11 +50,11 @@ public class playing extends state implements statemethods {
 	public void draw(Graphics g) {
 
 		if (QuestionNum % 5 != 0 || QuestionNum == 0) {
-			String ans0 = QuestionList.get(QuestionNum).getoption(0);
-			String ans1 = QuestionList.get(QuestionNum).getoption(1);
-			String ans2 = QuestionList.get(QuestionNum).getoption(2);
-			String ans3 = QuestionList.get(QuestionNum).getoption(3);
-			String questiontext = QuestionList.get(QuestionNum).getquestion();
+			String ans0 = QuestionList.get(QuestionNum).getOption(0);
+			String ans1 = QuestionList.get(QuestionNum).getOption(1);
+			String ans2 = QuestionList.get(QuestionNum).getOption(2);
+			String ans3 = QuestionList.get(QuestionNum).getOption(3);
+			String questiontext = QuestionList.get(QuestionNum).getQuestionText();
 
 			// option boxes
 			g.setColor(Color.GRAY);

@@ -9,23 +9,19 @@ package question_code;
  * @author jovan
  */
 public abstract class Question {
-    public double ca;
-    
-    public Question( double ca){
-        
+    protected double ca;
+
+    public Question(double ca) {
         this.ca = ca;
-        
-        }
-    public boolean checkAns(double answer){
-        if (this.ca ==answer){
-            
-            return true;
-        }
-            
-       return false;
     }
-    
-    public abstract String getoption(int i);
-    public abstract String getquestion();
-    
+
+    public abstract boolean checkAns(double answer);
+
+    public abstract String getOption(int i);
+
+    public abstract String getQuestionText();
+
+    public double getCorrectAnswer() {
+        return ca;
+    }
 }
